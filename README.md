@@ -1,43 +1,87 @@
-# Password Generator
+![CI](https://github.com/SkriptSparrow/PasswordGenerator/actions/workflows/ci.yml/badge.svg)
 
-Простой и удобный генератор паролей, написанный на Python с использованием библиотеки Flet.
+# 🔐 Password Generator
 
----
-
-## 🚀 Функционал
-
-- Генерация паролей длиной 6, 8, 10, 12 или 20 символов.  
-- Возможность выбора состава пароля: только цифры, только буквы или буквы + цифры + спецсимволы.  
-- Пароль по умолчанию скрыт для безопасности — можно показать/скрыть нажатием на иконку глаза.  
-- Кнопка копирования сгенерированного пароля в буфер обмена.  
+A simple and secure desktop application for generating strong passwords.  
+Built with **Python + Flet**, works fully offline, customizable, and includes a built-in strength indicator.
 
 ---
 
-## 🛠 Технологии
-
-- Python  
-- Flet (для создания GUI)  
+## ✨ Features
+- Password generation using the [`secrets`](https://docs.python.org/3/library/secrets.html) module (cryptographically secure).
+- Flexible configuration: letters, digits, symbols.
+- Guaranteed inclusion of at least one character from each selected category.
+- Password strength indicator with visual cues (❌ weak / ⚠️ fair / ✅ strong).
+- One-click copy to clipboard.
+- Clean and modern user interface.
 
 ---
 
-## ⚙️ Как запустить
+## 🛠 Technologies
+- **Python 3.13**
+- [Flet](https://flet.dev/) — UI framework
+- `secrets`, `string` — password generation
+- `pytest` — testing
+- `ruff`, `black`, `pre-commit` — code style and quality
+- `PyInstaller` — build into `.exe`
 
-1. Склонируйте репозиторий:  
-git clone https://github.com/yourusername/PasswordGenerator.git
+---
 
-2. Установите зависимости (если нужно):
-pip install flet
+## 🚀 How to Run
 
-3. Запустите приложение из среды разработки или командной строки:
-python main.py
+### Local development
+```bash
+git clone https://github.com/SkriptSparrow/PasswordGenerator.git
+cd PasswordGenerator
+pip install -r requirements-dev.txt
+python -m password_gen.ui.main
+```
 
-## 📸 Скриншоты
+### Run tests
+```bash
+pytest -v
+```
 
-![Вид приложения](./screenshots/app.png)
+### Build executable locally
+```bash
+pyinstaller PasswordGenerator.spec --clean
+```
 
-📫 Контакты
+### Automatic build
 
-* **Telegram:** [@Alex\_Gicheva](https://t.me/Alex_Gicheva)
-* **Email:** [alexgicheva@gmail.com](mailto:alexgicheva@gmail.com)
+Each release is built automatically with GitHub Actions.
+Just tag a new version, e.g.:
+```bash
+git tag v1.0.0
+git push origin v1.0.0
+```
 
-✨ Спасибо за внимание! Надеюсь, этот генератор поможет тебе создавать надёжные пароли быстро и удобно.
+and a ready-to-use .exe will appear under Releases.
+
+---
+
+## 📸 Screenshots
+
+Main window:
+
+![Main window](password_gen/assets/screenshots/app_start.jpg)
+
+Password generated:
+
+![Main window](password_gen/assets/screenshots/app.jpg)
+
+---
+
+## 📥 Download
+
+👉 Get the latest release (.exe)
+
+---
+
+## 📬 Contact
+
+👩‍💻 Author: SkriptSparrow
+✉️ Email: alexgicheva@gmail.com
+💬 Telegram: @Alex_Gicheva
+
+✨ Thank you for using Password Generator! We hope it makes your workflow faster and easier.
