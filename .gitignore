@@ -1,0 +1,8 @@
+.venv/
+__pycache__/
+build/
+dist/
+.idea/
+*.spec
+.pytest_cache/
+password_generator_old.py
