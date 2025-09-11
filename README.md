@@ -74,7 +74,7 @@ Password generated:
 
 ## 📥 Download
 
-👉 Get the latest release (.exe)
+👉 Get the latest [release](https://github.com/SkriptSparrow/PasswordGenerator/releases/latest)
 
 ---
 
