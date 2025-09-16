@@ -57,8 +57,8 @@ pyinstaller PasswordGenerator.spec --clean
 Each release is built automatically with GitHub Actions.
 Just tag a new version, e.g.:
 ```bash
-git tag v1.0.0
-git push origin v1.0.0
+git tag v1.1.1
+git push origin v1.1.1
 ```
 
 and a ready-to-use .exe will appear under Releases.
