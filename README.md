@@ -12,10 +12,15 @@ Built with **Python + Flet**, works fully offline, customizable, and includes a 
 - Flexible configuration: letters, digits, symbols.
 - Guaranteed inclusion of at least one character from each selected category.
 - Password strength indicator with visual cues (❌ weak / ⚠️ fair / ✅ strong).
-- One-click copy to clipboard.
-- Clean and modern user interface.
+- ⏱️ **Auto-hide**: when a password is shown, it disappears after **10 seconds**.
+- 🧹 **Clipboard protection**: copied passwords are automatically removed from the clipboard after **30 seconds**.
+- 📋 One-click copy to clipboard.
+- 🖥️ Clean and modern user interface.
+- 🛡️ **Password Policies**:
+  - **Standard** — balanced complexity (letters, digits, symbols).
+  - **Admin** — stronger rules for administrator accounts.
+  - **NIST** — compliant with [NIST SP 800-63B](https://pages.nist.gov/800-63-3/) guidelines (longer, user-friendly but secure).
 
----
 
 ## 🛠 Technologies
 - **Python 3.13**
@@ -68,7 +73,11 @@ Main window:
 
 Password generated:
 
-![Main window](password_gen/assets/screenshots/app.jpg)
+![Password generated](password_gen/assets/screenshots/app.jpg)
+
+Choose different policies:
+
+![Choose different policies](password_gen/assets/screenshots/app_mode.jpg)
 
 ---
 
