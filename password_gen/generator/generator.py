@@ -1,48 +1,46 @@
-import random
 import secrets
 import string
 
+from password_gen.constants import AMBIGUOUS, SYMBOLS
 
-def generate_password(length=12, use_letters=True, use_digits=True, use_symbols=True):
-    """
-    Generates a cryptographically secure random password.
 
-    Args:
-        length (int): Length of the password. Default is 12.
-        use_letters (bool): Include letters in the password.
-        use_digits (bool): Include digits in the password.
-        use_symbols (bool): Include special symbols in the password.
-
-    Returns:
-        str: A random password.
-
-    Raises:
-        ValueError: If no character categories are selected.
-    """
+def generate_password(
+    length, use_letters=True, use_digits=True, use_symbols=True, exclude_ambiguous=False
+):
     categories = []
     if use_letters:
         categories.append(string.ascii_letters)
     if use_digits:
         categories.append(string.digits)
     if use_symbols:
-        categories.append("+-=_")
+        categories.append(SYMBOLS)
 
     if not categories:
-        raise ValueError("Select at least one character category")
+        raise ValueError("At least one category must be selected")
 
+    # 🔍 Проверка: длина меньше числа категорий
     if length < len(categories):
-        raise ValueError("Password length is too short for the chosen categories")
+        raise ValueError(
+            "Password length must be at least the number of selected categories"
+        )
 
-    # Гарантируем попадание всех категорий
-    password_chars = [secrets.choice(cat) for cat in categories]
-
-    # Остальное — случайно из всех категорий вместе
     all_chars = "".join(categories)
-    password_chars += [
-        secrets.choice(all_chars) for _ in range(length - len(password_chars))
-    ]
 
-    # Перемешиваем, чтобы символы категорий не всегда были в начале
-    random.shuffle(password_chars)
+    if exclude_ambiguous:
+        all_chars = "".join(ch for ch in all_chars if ch not in AMBIGUOUS)
 
+    if not all_chars:
+        raise ValueError("No characters available for generation")
+
+    # Генерация
+    password_chars = []
+    for cat in categories:
+        filtered = [c for c in cat if (not exclude_ambiguous or c not in AMBIGUOUS)]
+        if filtered:
+            password_chars.append(secrets.choice(filtered))
+
+    while len(password_chars) < length:
+        password_chars.append(secrets.choice(all_chars))
+
+    secrets.SystemRandom().shuffle(password_chars)
     return "".join(password_chars)

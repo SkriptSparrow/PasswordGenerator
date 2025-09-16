@@ -1,8 +1,22 @@
-.venv/
+# Python
 __pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual env
+.venv/
+
+# PyInstaller
 build/
 dist/
-.idea/
 *.spec
+
+# IDE
+.idea/
+.vscode/
+
+# Pytest cache
 .pytest_cache/
+
 password_generator_old.py

@@ -5,57 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70775db9-829f-40b0-a75a-8268f332d2cd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.github/workflows/ci.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.github/workflows/release.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.pre-commit-config.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/password_gen/generator/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/password_gen/generator/generator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/password_gen/generator/strength.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/password_gen/policies/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/password_gen/ui/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/password_gen/ui/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements-dev.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_generator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_strength.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.github/changelog-config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/password_gen/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/password_gen/blacklist/blacklist.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/password_gen/constants.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/password_gen/policies/policies.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/password_gen/ui/dialogs.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/password_gen/ui/handlers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/password_gen/ui/layout.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/password_gen/utils/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/password_gen/utils/clipboard.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/password_gen/utils/resources.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/password_gen/utils/timers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pytest.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_blacklist.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_dialogs.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_handlers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_handlers_branches.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_handlers_generate.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_handlers_misc.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_layout.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_utils_clipboard.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_utils_resources.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_utils_timers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/release.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/release.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/Password_generator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Password_generator.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PasswordGenerator.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/PasswordGenerator.spec" beforeDir="false" afterPath="$PROJECT_DIR$/PasswordGenerator.spec" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/PasswordGenerator/Analysis-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/build/PasswordGenerator/Analysis-00.toc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/PasswordGenerator/EXE-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/build/PasswordGenerator/EXE-00.toc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/PasswordGenerator/PKG-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/build/PasswordGenerator/PKG-00.toc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/PasswordGenerator/PYZ-00.pyz" beforeDir="false" afterPath="$PROJECT_DIR$/build/PasswordGenerator/PYZ-00.pyz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/PasswordGenerator/PYZ-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/build/PasswordGenerator/PYZ-00.toc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/PasswordGenerator/PasswordGenerator.pkg" beforeDir="false" afterPath="$PROJECT_DIR$/build/PasswordGenerator/PasswordGenerator.pkg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/PasswordGenerator/base_library.zip" beforeDir="false" afterPath="$PROJECT_DIR$/build/PasswordGenerator/base_library.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/PasswordGenerator/warn-PasswordGenerator.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/PasswordGenerator/warn-PasswordGenerator.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/PasswordGenerator/xref-PasswordGenerator.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/PasswordGenerator/xref-PasswordGenerator.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/password_generator/Analysis-00.toc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/password_generator/EXE-00.toc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/password_generator/PKG-00.toc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/password_generator/PYZ-00.pyz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/password_generator/PYZ-00.toc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/password_generator/base_library.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/password_generator/password_generator.pkg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/password_generator/warn-password_generator.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/password_generator/xref-password_generator.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/PasswordGenerator.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/password_generator.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/rubik/Rubik-Bold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/rubik/Rubik-Light.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/rubik/Rubik-LightItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/rubik/Rubik-Medium.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/rubik/Rubik-Regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img&amp;icons/password_icon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img&amp;icons/password_image.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/password_generator.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/password_generator.spec" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/app.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/password_gen/generator/generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/password_gen/generator/generator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/password_gen/generator/strength.py" beforeDir="false" afterPath="$PROJECT_DIR$/password_gen/generator/strength.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/password_gen/ui/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/password_gen/ui/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_generator.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,26 +74,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.PasswordGenerator.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.password_generator (1).executor": "Run",
-    "Python.test_image.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python tests.pytest in tests.executor&quot;: &quot;Run&quot;,
+    &quot;Python.PasswordGenerator.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.password_generator (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.password_generator_old.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test_image.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;refactor-structure&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Administrator\PycharmProjects\Apps\Password_generator\password_gen" />
       <recent name="C:\Users\Administrator\PycharmProjects\Apps\Password_generator\password_generator\generator" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.password_generator_old">
     <configuration name="PasswordGenerator" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Password_generator" />
       <option name="ENV_FILES" value="" />
@@ -157,28 +140,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="password_generator (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Password_generator" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/password_generator.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="password_generator" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="Password_generator" />
       <option name="ENV_FILES" value="" />
@@ -193,6 +154,28 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="C:\Users\Asus\PycharmProjects\Apps\Password_generator\password_generator.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="password_generator_old" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Password_generator" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/password_generator_old.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -223,12 +206,30 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="pytest in tests" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="Password_generator" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.password_generator_old" />
+        <item itemvalue="Python tests.pytest in tests" />
         <item itemvalue="Python.test_image" />
         <item itemvalue="Python.PasswordGenerator" />
-        <item itemvalue="Python.password_generator (1)" />
       </list>
     </recent_temporary>
   </component>
