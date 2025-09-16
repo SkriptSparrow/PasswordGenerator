@@ -1,25 +1,32 @@
 # -*- mode: python ; coding: utf-8 -*-
 
+block_cipher = None
 
 a = Analysis(
-    ['password_gen\\ui\\main.py'],
+    ['password_gen/ui/main.py'],
     pathex=[],
     binaries=[],
-    datas=[],
+    datas=[
+        ('password_gen/assets/fonts/rubik/Rubik-Medium.ttf', 'password_gen/assets/fonts/rubik'),
+        ('password_gen/assets/images/logo.png', 'password_gen/assets/images'),
+    ],
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},
     runtime_hooks=[],
     excludes=[],
+    win_no_prefer_redirects=False,
+    win_private_assemblies=False,
+    cipher=block_cipher,
     noarchive=False,
-    optimize=0,
 )
-pyz = PYZ(a.pure)
+pyz = PYZ(a.pure, a.zipped_data, cipher=block_cipher)
 
 exe = EXE(
     pyz,
     a.scripts,
     a.binaries,
+    a.zipfiles,
     a.datas,
     [],
     name='PasswordGenerator',
@@ -27,12 +34,7 @@ exe = EXE(
     bootloader_ignore_signals=False,
     strip=False,
     upx=True,
-    upx_exclude=[],
-    runtime_tmpdir=None,
-    console=True,
-    disable_windowed_traceback=False,
-    argv_emulation=False,
-    target_arch=None,
-    codesign_identity=None,
-    entitlements_file=None,
+    console=False,
+    icon='password_gen/assets/images/password_icon.ico',
+    onefile=True,  # ← добавляем эту строчку
 )

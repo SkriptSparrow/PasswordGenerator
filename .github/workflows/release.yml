@@ -55,7 +55,12 @@ jobs:
           pip install pyinstaller
 
       - name: Build exe
-        run: pyinstaller --noconfirm --onefile --name PasswordGenerator password_gen/ui/main.py
+        run: pyinstaller --noconfirm --onefile --windowed ^
+          --icon=password_gen/assets/images/password_icon.ico ^
+          --name PasswordGenerator ^
+          --add-data "password_gen/assets/fonts/rubik/Rubik-Medium.ttf;password_gen/assets/fonts/rubik" ^
+          --add-data "password_gen/assets/images/logo.png;password_gen/assets/images" ^
+          password_gen/ui/main.py
 
       - name: Upload exe artifact
         uses: actions/upload-artifact@v4
