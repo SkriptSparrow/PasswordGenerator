@@ -90,7 +90,9 @@ Choose different policies:
 ## 📬 Contact
 
 👩‍💻 Author: SkriptSparrow
+
 ✉️ Email: alexgicheva@gmail.com
+
 💬 Telegram: @Alex_Gicheva
 
 ✨ Thank you for using Password Generator! We hope it makes your workflow faster and easier.
